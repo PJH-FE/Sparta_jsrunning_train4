@@ -43,8 +43,9 @@ class Tutee extends Person {
     );
   }
 }
-let tutee1 = new Tutee("준현", 12000, "javascript");
-tutee1.info();
+let tutee = new Tutee("준현", 12000, "javascript");
+tutee.info();
 
 // 6. Student 클래스가 Person 클래스의 하위 클래스인 확인하고, tutee 인스턴스가 Studnet 클래스의 인스턴스인지 확인하여 출력해보세요.
 console.log(Student.prototype instanceof Person);
+console.log(tutee instanceof Student);
